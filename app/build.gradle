@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+repositories {
+    jcenter()
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.urgence"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.github.navasmdc:MaterialDesign:1.+@aar'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    provided "org.projectlombok:lombok:1.12.6"
+    compile 'com.mcxiaoke.volley:library:1.0.15'
+}

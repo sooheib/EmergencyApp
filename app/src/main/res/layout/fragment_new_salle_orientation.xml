@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.urgence.fragment.NewSalleOrientationFragment">
+
+
+    <EditText
+        android:id="@+id/new_ccmu"
+
+        style="@style/edit_text"
+        android:layout_centerInParent="true"
+
+        android:hint="CCMU" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_ccmu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="Nouvelle Box d'orientation "
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spin_box"
+            style="@style/edit_text"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttoncancel"
+                style="@style/btn"
+                android:text="Annuler" />
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttonValider"
+                style="@style/btn"
+                android:text="Valider" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

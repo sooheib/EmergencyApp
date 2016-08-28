@@ -1,0 +1,390 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/background_header"
+        android:orientation="vertical"
+        tools:context="com.urgence.fragment.InterfaceTriEtOrientation">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="Fiche médicale"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/photo" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/background_header"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/etat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginRight="30dp"
+                android:background="@color/background_header"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Transport"
+                        android:textColor="@android:color/white" />
+
+                    <Spinner
+                        android:id="@+id/spin_transport"
+
+                        style="@style/edit_text"
+                        android:entries="@array/fiche1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Origine "
+                        android:textColor="@android:color/white" />
+
+                    <Spinner
+                        android:id="@+id/spin_origine"
+
+                        style="@style/edit_text"
+                        android:entries="@array/fiche2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Circonstance "
+                        android:textColor="@android:color/white" />
+
+                    <Spinner
+                        android:id="@+id/spin_cir"
+
+                        style="@style/edit_text"
+                        android:entries="@array/fiche3" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="ATCD"
+                        android:textColor="@android:color/white" />
+
+                    <Spinner
+                        android:id="@+id/spin_atcd"
+
+                        style="@style/edit_text"
+                        android:entries="@array/fiche5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+
+                <EditText
+                    android:id="@+id/fr_edit"
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+
+                    android:hint="FR"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/sp_edit"
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:hint="SPO2"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/FC_edit"
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_weight="1"
+                    android:hint="FC"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/paedit"
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+
+                    android:layout_weight="1"
+                    android:hint="PA"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/t_edit"
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_weight="1"
+                    android:hint="T°"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/eva_edit"
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:hint="EVA"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/score"
+
+                    style="@style/edit_text"
+
+                    android:editable="false"
+                    android:hint="Score" />
+
+                <EditText
+                    android:id="@+id/ccmu"
+
+                    style="@style/edit_text"
+                    android:editable="false"
+
+
+                    android:hint="CCMU" />
+
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/buttoncalculer"
+                    style="@style/btn"
+
+                    android:layout_gravity="center_horizontal"
+                    android:text="Calculer" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            >
+
+
+            <EditText
+                android:id="@+id/hdm"
+
+                style="@style/edit_text"
+
+
+                android:hint="HDM" />
+
+
+            <EditText
+                android:id="@+id/motif_consultation"
+
+                style="@style/edit_text"
+
+                android:hint="Motif de consultation" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Type"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/spin_type"
+
+                style="@style/edit_text"
+                android:entries="@array/fiche6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Box d'orientation"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/spin_box"
+
+                style="@style/edit_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttoncancel"
+                style="@style/btn"
+                android:text="Annuler" />
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttonValider"
+                style="@style/btn"
+                android:text="Valider" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

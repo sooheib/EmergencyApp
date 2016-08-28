@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    tools:context="com.urgence.fragment.GererFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:gravity="center"
+                android:text="Gérer les salles"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spin_box"
+
+                style="@style/edit_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Sélectionner le responsable"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spin_box_reponsable"
+
+                style="@style/edit_text" />
+
+
+            <EditText
+                android:id="@+id/login_alle"
+
+                style="@style/edit_text"
+                android:layout_below="@+id/img_src"
+
+                android:hint="Login"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/pass_salle"
+                style="@style/edit_text"
+
+                android:layout_below="@+id/login"
+                android:hint="Mot de passe"
+                android:inputType="textPassword" />
+
+
+            <EditText
+                android:id="@+id/confirmepass_salle"
+                style="@style/edit_text"
+
+                android:hint="Conrifmer mot de passe"
+                android:inputType="textPassword" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/buttoncancel"
+                    style="@style/btn"
+                    android:text="Annuler" />
+
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/buttonValider"
+                    style="@style/btn"
+                    android:text="Valider" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:gravity="center"
+                android:text="Gérer les utilisateurs"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/login"
+
+                style="@style/edit_text"
+                android:layout_below="@+id/img_src"
+
+                android:hint="Nom"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/pass"
+                style="@style/edit_text"
+
+                android:layout_below="@+id/login"
+                android:hint="Prénom"
+                android:inputType="text" />
+
+            <Spinner
+                android:id="@+id/spin_grade"
+
+                style="@style/edit_text"
+                android:entries="@array/grade" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/valider"
+                    style="@style/btn"
+                    android:text="Valider" />
+
+
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/buttonReset"
+                    style="@style/btn"
+                    android:text="Effacer" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

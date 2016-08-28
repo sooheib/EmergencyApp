@@ -1,0 +1,202 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.urgence.fragment.AddPatientFragment">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="Inscrire un patient"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/photo"
+            app:siBorderColor="@color/background_header"
+            app:siBorderWidth="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@android:color/holo_blue_dark"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nom"
+
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+
+
+                    android:hint="Nom" />
+
+                <EditText
+                    android:id="@+id/prenom"
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+
+
+                    android:hint="Prénom" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Sexe :  "
+                    android:textColor="@android:color/white" />
+
+                <com.gc.materialdesign.views.CheckBox
+                    android:id="@+id/sexhomme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#1E88E5"
+                    materialdesign:check="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Homme"
+                    android:textColor="@android:color/white" />
+
+                <com.gc.materialdesign.views.CheckBox
+                    android:id="@+id/sexfemme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:background="#1E88E5"
+                    materialdesign:check="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Femme"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/login"
+
+                    style="@style/edit_text"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="Date de naissance" />
+
+
+                <Spinner
+                    android:id="@+id/aucuneidee"
+                    style="@style/edit_text"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:entries="@array/carnet" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/tel"
+
+                    style="@style/edit_text"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="Téléphone" />
+
+                <Spinner
+                    android:id="@+id/profession"
+                    style="@style/edit_text"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:entries="@array/profesion" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="10dp">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttoncancel"
+                style="@style/btn"
+                android:text="Annuler" />
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttonValider"
+                style="@style/btn"
+                android:text="Valider" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

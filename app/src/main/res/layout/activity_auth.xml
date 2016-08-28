@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    tools:context=".AuthActivity">
+
+    <ImageView
+        android:id="@+id/img_src"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/icone" />
+
+    <EditText
+        android:id="@+id/login"
+
+        style="@style/edit_text"
+        android:layout_below="@+id/img_src"
+        android:drawableLeft="@mipmap/one"
+
+        android:hint="Login"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/pass"
+        style="@style/edit_text"
+        android:drawableLeft="@mipmap/two"
+
+        android:layout_below="@+id/login"
+        android:hint="Mot de passe"
+        android:inputType="textPassword" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/buttonAuth"
+            style="@style/btn"
+            android:text="S'authentifier" />
+
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/gerer_salle"
+            style="@style/btn"
+            android:text="Espace d'administration" />
+
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/buttonReset"
+            style="@style/btn"
+            android:visibility="gone"
+            android:text="Effacer" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</RelativeLayout>

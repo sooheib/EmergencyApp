@@ -1,0 +1,217 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.urgence.fragment.AddPatientFragment">
+
+
+        <TextView
+
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="Inscrire un patient"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/profile"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/photo"
+            app:siBorderColor="@color/background_header"
+            app:siBorderWidth="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@android:color/holo_blue_dark"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nom"
+
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+
+
+                    android:hint="Nom" />
+
+                <EditText
+                    android:id="@+id/prenom"
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+
+
+                    android:hint="Prénom" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/login"
+
+                    style="@style/edit_text"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="Date de naissance" />
+
+
+                <EditText
+                    android:id="@+id/aucuneidee"
+
+                    style="@style/edit_text"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="Carnet" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sexe"
+
+                    style="@style/edit_text"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="Sexe" />
+
+
+                <EditText
+                    android:id="@+id/date_inscrption"
+
+                    style="@style/edit_text"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/tel"
+
+                    style="@style/edit_text"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="Téléphone" />
+
+
+                <EditText
+                    android:id="@+id/profession"
+
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+
+                    android:hint="Profession" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detail_fiche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="10dp">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttoncancel"
+                style="@style/btn"
+                android:text="Retour" />
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttonValider"
+                style="@style/btn"
+                android:text="Appeller" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="10dp">
+
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttonSortie"
+                style="@style/btn"
+                android:text="Sortie" />
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/buttonReorienter"
+                style="@style/btn"
+                android:text="Reorienter" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

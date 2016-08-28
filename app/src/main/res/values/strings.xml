@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">Urgence</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <string-array name="insricption_function">
+
+        <item>Inscrire un patient</item>
+        <item>Liste des patients</item>
+        <item>Se déconnecter</item>
+    </string-array>
+
+
+    <string-array name="insricption_function_icon">
+
+        <item>@drawable/deconnecter</item>
+        <item>@drawable/deconnecter</item>
+        <item>@drawable/deconnecter</item>
+
+
+    </string-array>
+    <string-array name="iao_function">
+
+        <item>Appeler un patient</item>
+        <item>Consulter la liste des patients </item>
+        <item>Consulter la liste des salles </item>
+        <item>Se déconnecter</item>
+    </string-array>
+
+    <string-array name="iao_function_icon">
+
+        <item>@drawable/deconnecter</item>
+        <item>@drawable/deconnecter</item>
+        <item>@drawable/deconnecter</item>
+        <item>@drawable/deconnecter</item>
+
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="fiche1">
+        <item>SMUR</item>
+        <item>PLOICE</item>
+        <item>PC</item>
+        <item>AMB</item>
+        <item>Personnel</item>
+    </string-array>
+
+
+    <string-array name="fiche2">
+
+
+        <item> *Fièvre</item>
+        <item> *Maux de tête</item>
+        <item> *Syncope</item>
+        <item>  *Douleur oculaire</item>
+        <item>  *Confusion et céphalée</item>
+        <item>  *Blessure nasale</item>
+        <item>  *Trauma crânien</item>
+        <item>  *Douleur thoracique</item>
+        <item>  *Compression thoracique</item>
+        <item>  *Palpitation</item>
+        <item>  *Brûlure</item>
+        <item>  *Syncope</item>
+        <item>  *Bradycardie</item>
+        <item>  *Abdomen</item>
+        <item>  *Constipation</item>
+        <item>  *Diarrhée</item>
+        <item>  *Vomissement</item>
+        <item>  *Diarrhée</item>
+
+
+    </string-array>
+
+    <string-array name="fiche3">
+        <item> * traumatique: vital/non vital</item>
+        <item> * non traumatique vital/non vital</item>
+
+
+    </string-array>
+
+    <string-array name="fiche4">
+        <item>FR</item>
+        <item>S/02</item>
+        <item>FC</item>
+        <item>PA</item>
+        <item>T</item>
+        <item>GAB</item>
+    </string-array>
+
+
+    <string-array name="fiche5">
+
+
+        <item> *Domestique</item>
+        <item> *travail</item>
+        <item> *Voie publique</item>
+
+    </string-array>
+
+
+    <string-array name="gravite">
+
+        <item> *comportement du malade</item>
+
+
+        <item>  *stabilité de maladie</item>
+        <item>   *gravité de la crise</item>
+
+
+    </string-array>
+
+
+
+
+    <string-array name="fiche6">
+        <item>Traumatique</item>
+        <item>Non Traumatique</item>
+
+    </string-array>
+
+    <string-array name="grade">
+        <item>Médecin</item>
+        <item>Agent Administratif</item>
+        <item>Infirmier</item>
+
+        <item>Technicien de radiologie</item>
+    </string-array>
+
+    <string-array name="carnet">
+        <item>CNAM/CRNPS</item>
+        <item>CNAM/CAVIS</item>
+        <item>CNAM/CNSS</item>
+        <item>Assurancce Privé</item>
+    </string-array>
+
+    <string-array name="profesion">
+        <item>Agriculture; plantations; autres secteurs ruraux</item>
+        <item>Commerce</item>
+        <item>Construction</item>
+        <item>Education</item>
+        <item>Entreprises mécaniques et électroniques</item>
+        <item>Fonction publique </item>
+        <item>Foresterie; bois; pote et papier</item>
+        <item>Hotels;tourisme;restauration</item>
+        <item>Industries chimiques</item>
+        <item>Industrie du matériel de transport</item>
+        <item>Industrie minière(charbon;autres minéreaux)</item>
+        <item>Médias; culture; images</item>
+        <item>Production de métal de base</item>
+        <item>Production de pétrole et de gaz; raffinerie de pétrole</item>
+        <item>Produits alimnetaires; boissons; tabac</item>
+        <item>Services de santé</item>
+        <item>Services financiers</item>
+        <item>Services professionnels</item>
+        <item>Services postaux</item>
+        <item>Services de télécommunications</item>
+        <item>Services publics de distribution</item>
+        <item>Textile</item>
+        <item>Transport</item>
+    </string-array>
+    <string-array name="salle1">
+        <item> BOX2</item>
+        <item> BOX3</item>
+        <item> BOX4</item>
+        <item> Réanimation.</item>
+    </string-array>
+</resources>
