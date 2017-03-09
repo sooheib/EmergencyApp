@@ -7,3 +7,9 @@ This information was made available through a dashboard announcing patients' pri
 *The increased visibility of the dashboard reduced the tension and anxiety of waiting, patients.<BR>
 *The application allowed a voice call announcing the name of the next patient to consult, and the orientation room.<BR>
 <img src="https://spartax.000webhostapp.com/screen01.png"/>
+<BR>
+<img src="https://spartax.000webhostapp.com/screen02.png"/>
+<BR>
+<img src="https://spartax.000webhostapp.com/screen03.png"/>
+<BR>
+
