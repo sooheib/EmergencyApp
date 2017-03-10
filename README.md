@@ -6,10 +6,21 @@ This project facilitated the following conveniences<BR>
 This information was made available through a dashboard announcing patients' priority 'level`, the seriousness of their condition, referral to any room and an estimate of input time.<BR>
 *The increased visibility of the dashboard reduced the tension and anxiety of waiting, patients.<BR>
 *The application allowed a voice call announcing the name of the next patient to consult, and the orientation room.<BR>
+
+
+Tablet :
 <img src="https://spartax.000webhostapp.com/screen01.png"/>
 <BR>
 <img src="https://spartax.000webhostapp.com/screen02.png"/>
 <BR>
 <img src="https://spartax.000webhostapp.com/screen03.png"/>
 <BR>
+
+
+ANDROID TV dashboard : 
+<img src="https://spartax.000webhostapp.com/screen0.png"/>
+<BR>
+<img src="https://spartax.000webhostapp.com/screen04.png"/>
+<BR>
+
 
